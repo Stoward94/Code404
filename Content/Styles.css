@@ -25,8 +25,13 @@
     border-radius: 5px;
 }
 
-
 .content-heading {
     text-align: center;
     margin-bottom: 50px;
+}
+
+hr{
+	width:100px;
+	border-color:#19b5fe;
+	margin-top:10px;
 }
