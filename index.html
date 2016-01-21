@@ -5,158 +5,253 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Code404</title>
-	
-	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 
-    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="Content/Styles.css" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="Content/Styles.css"/>
+    <link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css"/>
 </head>
 <body>
-    <!-- ======================================== Nav Bar ======================================== -->
-    <nav class="navbar navbar-default navbar-static-top">
+<!-- ======================================== Nav Bar ======================================== -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand"><strong>Code</strong><code>404</code></span>				
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#intro-view" class="nav-item nav-active">What's Up</a>
+                </li>
+                <li>
+                    <a href="#calendar-view" class="nav-item">Organisation</a>
+                </li>
+                <li>
+                    <a href="#sharing-view" class="nav-item">Share</a>
+                </li>
+                <li>
+                    <a href="#chat-view" class="nav-item">Communicate</a>
+                </li>
+                <li>
+                    <a href="#import-view" class="nav-item">Import</a>
+                </li>
+                <li>
+                    <a href="#developers-view" class="nav-item">Team</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div>
+    <section id="intro-view">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span class="navbar-brand"><strong>Code</strong><code>404</code></span>				
+            <div class="row">
+                <div class="col-sm-8">
+                    <div style="margin: 100px 20px 140px 40px;">
+                        <h1 style="text-align: center">
+                            <i class="fa fa-code"></i> What's Up
+                        </h1>
+                        <hr style="margin-bottom: 40px;">
+                        <p style="font-size: 32px; text-align: center;">
+                            Brought to you from Code404, What's Up. The new and innovative way for you to organise your every day life.
+                            Designed with you in mind, What's Up allows you to plan everything important in your day in the form of events.
+                            Not only that but you have the power to connect with your friends and families or even your colleagues everywhere.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="Media/logo.png" width="322" class="img-responsive" style="margin: 140px 20px;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendar-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="Media/Calendar-full.png" width="454" class="img-responsive" style="margin: 40px 20px;"/>
+                </div>
+                <div class="col-sm-8">
+                    <div style="margin: 160px 20px 0 40px;">
+                        <h1 style="text-align: center">
+                            <i class="fa fa-calendar"></i> Simplistic Organisation
+                        </h1>
+                        <hr style="margin-bottom: 40px;">
+                        <p style="font-size: 32px; text-align: center;">
+                            Simplify your calendar workflow. No need to remember every single meeting, football game, parents evening any more. View all your events
+                            in an instant, whether it be in the monthly plan view or simply the scheduled view.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sharing-view" class="blue-background">
+        <div class="container" style="margin-top: 70px;">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div style="margin: 160px 20px 0 40px;">
+                        <h1 style="text-align: center">
+                            <i class="fa fa-users"></i> Share Anything & Everything
+                        </h1>
+                        <hr style="margin-bottom: 40px;">
+                        <p style="font-size: 32px; text-align: center;">
+                            Need to share an event with someone? Easy. What about an entire calendar? Of course.
+                            You share a calendar with someone and they will stay up to date with everything that happens.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="Media/Sharing-full.png" width="454" class="img-responsive" style="margin: 40px 20px;"/>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="chat-view" class="orange-background">
+        <div class="container" style="margin-top: 70px;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="Media/Chat-full.png" width="454" class="img-responsive" style="margin: 40px 20px;"/>
+                </div>
+                <div class="col-sm-8">
+                    <div style="margin: 160px 20px 0 40px;">
+                        <h1 style="text-align: center">
+                            <i class="fa fa-comments-o"></i> Event Based Communication
+                        </h1>
+                        <hr style="margin-bottom: 40px;">
+                        <p style="font-size: 32px; text-align: center;">
+                            Quickly and easily message the members of your events using the in-built chat system. A convenient way
+                            to notify all those friends, family and colleagues relating to a particular event or occasion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="import-view">
+        <div class="container" style="margin-top: 70px;">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div style="margin: 150px 20px 0 40px;">
+                        <h1 style="text-align: center">
+                            <i class="fa fa-cloud-download"></i> Use Your Existing Calendars
+                        </h1>
+                        <hr style="margin-bottom: 40px;">
+                        <p style="font-size: 32px; text-align: center;">
+                            Import all your existing calendars and events straight from Google, Outlook and iCloud calendars.
+                            Continually sync'd to your existing services, you'll never miss anything again.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="Media/imports-icons.png" width="384" class="img-responsive" style="margin: 140px 20px 0; float: right;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="developers-view" name="team" style="margin-top: 70px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="margin: 100px 20px 40px 40px;">
+                        <h1 style="text-align: center">
+                            <i class="fa fa-code-fork"></i> Your What's Up Team
+                        </h1>
+                        <hr style="margin-bottom: 40px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="min-height: 250px;">
+                <div class="col-sm-3" style="text-align: right">
+                    <img src="Media/Luke.jpg" height="200" width="200" Title="Luke Stoward" class="img-circle"/>
+                </div>
+                <div class="col-sm-9">
+                    <p style="font-size: 18px; text-align: center; margin-top: 60px; max-width: 700px;">
+                        Luke will be leading the development of the server-side backend for our mobile application. He will be designing the application programming interface <strong>(API)</strong>
+                        that will be responsible for providing access to the applications business logic and backend data store. Luke will also be assisting the design and development
+                        of the database that will house the data used by the application.
+                    </p>
+                </div>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#home" class="nav-item nav-active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="nav-item">About</a>
-                    </li>
-                    <li>
-                        <a href="#team" class="nav-item">Team</a>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+            <div class="row" style="min-height: 250px;">
+                <div class="col-sm-3" style="text-align: right">
+                    <img src="Media/Dan.jpg" height="200" width="200" Title="Daniel Bendell" class="img-circle"/>
+                </div>
+                <div class="col-sm-9">
+                    <p style="font-size: 18px; text-align: center; margin-top: 60px; max-width: 700px;">
+                        Dan's contributions will be across the board, assisting with the server-side backend, construction of the API and mobile development.
+                        He will also be focusing on the user interface <strong>(UI)</strong>, ensuring that the mobile application is simple yet intuitive to navigate.
+                        Dan will be creating a uniform appearance for the application, that follows the flow and style of Code404.
+                    </p>
+                </div>
+            </div>
 
-	<div>
-		<!-- ======================================== HOME ======================================== -->
-		<section id="home" name="home">
-			<div>
-				<img class="img-responsive" src="Media/image1.png" style="width:100%;">
-			</div>
-			
-		</section>
+            <div class="row" style="min-height: 250px;">
+                <div class="col-sm-3" style="text-align: right">
+                    <img src="Media/Tommy.jpg" height="200" width="200" Title="Thomas Kraaijeveld" class="img-circle"/>
+                </div>
+                <div class="col-sm-9">
+                    <p style="font-size: 18px; text-align: center; margin-top: 60px; max-width: 700px;">
+                        Tom is our lead Android developer for our mobile application.
+                        He will be designing and building the application, laying down the groundwork, infrastructure and product discussion from start to finish.
+                        He will also be working on the implementation, debugging and testing of features for our application ensuring that it's functionality is flawless and glitch-free.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- ======================================== WHAT WE DO ======================================== -->
-		<section id="about" name="about">
-			<div style="padding: 50px 0">
-				<div class="container">
-					<div class="row">
-						<h1 class="content-heading">
-							<span>WHAT WE DO</span>
-							<hr>
-						</h1>
-						<div style="max-width: 80%; margin: 0 auto;">
-							<div class="col-md-6">
-								<p style="font-size: 18px;">
-									Here at <b>Code</b><code>404</code> we specialise in mobile application development, primarily for the android market. 
-									We will be researching, designing and developing a highly customisable events and calendar sharing application, with the 
-									aim of bringing collaboration amongst work colleagues and friends even closer. Our application will provide 
-									users with the ability to connect and share calendars events and meetings instantly with simplistic integration 
-									with Google and Exchange/Outlook calendars. 
-								</p>
-								<p style="font-size: 18px;">
-									Our aim of this development is to further facilitate and improve on social interaction, planning and organisation by 
-									internet based social communication with calendar based event/action creation and tracking.
-								</p>
-							</div>
-							<div class="col-md-6" style="text-align: center;">
-								<img src="Media/Code.png" height="300" width="300" class="img-circle" style="margin: 0 auto; display: block;" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="video-view">
+        <div class="container" style="margin-top: 70px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="margin: 50px 20px 0 40px;">
+                        <h1 style="text-align: center">
+                            <i class="fa fa-play"></i> The Problem We Solved
+                        </h1>
+                        <hr style="margin-bottom: 40px;">
+                        <div style="text-align: center; margin-bottom: 60px;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/c_pWJDEQUJ4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- ======================================== WHO WE ARE ======================================== -->
-		<section id="team" name="team">
-			<div style="padding: 50px 0; background-color: #f0f0f0;">
-				<div class="container">
-					<div class="row">
-						<h1 class="content-heading">
-							<span>WHO WE ARE</span>
-							<hr>
-						</h1>
-						<div>
-							<div class="col-md-4">
-								<div style="text-align: center; margin-bottom: 10px;">
-									<img src="Media/Luke.jpg" height="200" width="200" Title="Luke Stoward" class="img-circle" style="margin: 0 auto; display: block;" />
-								</div>
-								<p style="font-size: 18px; text-align:center;">
-									Luke will be leading the development of the server-side backend for our mobile application. He will be designing the application programming interface <strong>(API)</strong>
-									that will be responsible for providing access to the applications business logic and backend data store. Luke will also be assisting the design and development 
-									of the database that will house the data used by the application.
-								</p>
-							</div>
-							<div class="col-md-4">
-								<div style="text-align: center; margin-bottom: 10px;">
-									<img src="Media/Dan.jpg" height="200" width="200" Title="Daniel Bendell" class="img-circle" style="margin: 0 auto; display: block;" />
-								</div>
-								<p style="font-size: 18px; text-align:center;">
-									Dan's contributions will be across the board, assisting with the server-side backend, construction of the API and mobile development.
-									He will also be focusing on the user interface <strong>(UI)</strong>, ensuring that the mobile application is simple yet intuitive to navigate.
-									Dan will be creating a uniform appearance for the application, that follows the flow and style of Code404.
-								</p>
-							</div>
-							<div class="col-md-4">
-								<div style="text-align: center; margin-bottom: 10px;">
-									<img src="Media/Tommy.jpg" height="200" width="200" Title="Thomas Kraaijeveld" class="img-circle" style="margin: 0 auto; display: block;"/>
-								</div>
-								<p style="font-size: 18px; text-align:center;">
-									Tom is our lead Android developer for our mobile application. 
-									He will be designing and building the application, laying down the groundwork, infrastructure and product discussion from start to finish. 
-									He will also be working on the implementation, debugging and testing of features for our application ensuring that it's functionality is flawless and glitch-free.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</section>
-			
-		<section id="video" name="video">
-			<div style="padding: 50px 0; background-color: #FFF;">
-				<div class="container" style="text-align:center;">
-					<h1 class="content-heading">
-							<span>WHAT WE ARE DOING</span>
-							<hr>
-					</h1>				
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/c_pWJDEQUJ4" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</section>
-
-		<div style="background-color: #19b5fe; padding-bottom:20px;">
-			<div style="margin: 0 auto; text-align: center;">
-				<img src="Media/FB-f-Logo__white_72.png" width="72" height="72" style="margin: 20px 50px;"/>
-				<img src="Media/TwitterLogo_white.png" width="72" height="72" style="margin: 20px 50px;"/>
-				<img src="Media/In-White-66px-TM.png" width="78" height="66" style="margin: 20px 50px;"/>
-			</div>
-			<footer style="color: white; text-align: center; ">
-				<p style="margin: 0;">Copyright &copy; 2015 Code404</p>
-			</footer>
-		</div>
-	</div>
+    <div style="background-color: #19b5fe; padding-bottom: 20px;">
+        <div style="margin: 0 auto; text-align: center;">
+            <img src="Media/FB-f-Logo__white_72.png" width="72" height="72" style="margin: 20px 50px;"/>
+            <img src="Media/TwitterLogo_white.png" width="72" height="72" style="margin: 20px 50px;"/>
+            <img src="Media/In-White-66px-TM.png" width="78" height="66" style="margin: 20px 50px;"/>
+        </div>
+        <footer style="color: white; text-align: center;">
+            <p style="margin: 0;">Copyright &copy; 2016 Code404</p>
+        </footer>
+    </div>
+</div>
 
 
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/site.js"></script>
+<script src="Scripts/jquery-1.9.1.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<script src="Scripts/site.js"></script>
 </body>
 </html>
